@@ -1,0 +1,61 @@
+[project]
+name = "ds_ml_excercises"
+version = "0.1.0"
+description = "Data Science and Machine Learning exercises"
+readme = "README.md"
+authors = [{ name = "Isaac Abouganem", email = "abouganemi@gmail.com" }]
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+  "pandas",
+  "numpy (==2.2.2)",
+  "matplotlib",
+  "seaborn",
+  "flake8",
+  "black (>=24.0)",
+  "isort",
+  "pylint",
+  "pep8",
+  "autopep8",
+  "scikit-learn",
+  "dc_stat_think",
+  "scipy",
+  "openpyxl",
+  "pytest",
+  "pre-commit",
+  # Uncomment these if needed:
+  # dc_stat_think,
+  # "arviz",
+  # "pymc",
+  # "bambi",
+  # "numba"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.black]
+line-length = 79
+target-version = ['py310', 'py311', 'py312', 'py313']
+include = '\.pyi?$'
+exclude = '''
+/(
+  \.toml
+  |\.sh
+  |\.git
+  |\.ini
+  |\.md
+  |\.yml
+  |\.joblib
+)/
+'''
+
+[tool.isort]
+profile = "black"
+force_alphabetical_sort_within_sections = true
+lines_after_imports = 2
+line_length = 79
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
