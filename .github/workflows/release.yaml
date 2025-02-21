@@ -5,7 +5,7 @@ on:
       - main
       - dev
 
-permissions: read-all
+permissions: write-all
 
 jobs:
   release:
