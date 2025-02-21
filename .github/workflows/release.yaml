@@ -11,6 +11,7 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'abouganemi'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,5 +25,5 @@ jobs:
         run: npm install -g semantic-release @semantic-release/github @semantic-release/git @semantic-release/changelog
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
         run: npx semantic-release
