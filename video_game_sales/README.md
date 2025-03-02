@@ -32,7 +32,7 @@ The dataset used for this project contains:
   - `NA_Sales`, `EU_Sales`, `JP_Sales`, `Other_Sales` (Regional sales in millions)
   - `Global_Sales` (Total sales worldwide)
   - **Engineered Features:** `Platform Category`, `Sales Category`, `Regional Sales Ratios`
-  
+
 The dataset was sourced from [**Kaggle**](https://www.kaggle.com/datasets/willianoliveiragibin/video-game-sales-analyze/data) and cleaned for analysis.
 
 ### **Inflation Data**
@@ -100,7 +100,7 @@ Each stage is **self-implemented first** before reviewing **AI-assisted optimiza
 
 This project follows a structured **question-driven workflow**, ensuring a **systematic learning process**:
 
-1. **Dataset Exploration & Cleaning**  
+1. **Dataset Exploration & Cleaning**
    - Handle missing values.
    - Feature engineering (e.g., platform categories, sales ratios).
 
