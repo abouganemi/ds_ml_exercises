@@ -8,7 +8,7 @@ requires-python = ">=3.12,<3.13"
 
 dependencies = [
   "pandas",
-  "numpy (==2.2.2)",
+  "numpy",
   "matplotlib",
   "seaborn",
   "flake8",
@@ -22,7 +22,7 @@ dependencies = [
   "scipy",
   "openpyxl",
   "pytest",
-  "pre-commit",
+  "imbalanced-learn",
   # Uncomment these if needed:
   # dc_stat_think,
   # "arviz",
